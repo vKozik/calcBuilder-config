@@ -1,0 +1,27 @@
+server:
+  port: 8761
+  waitTimeInMsWhenSyncEmpty: 5
+
+spring:
+  application:
+    name: calc-builder-eureka
+  freemarker:
+    template-loader-path: classpath:/templates/
+    prefer-file-system-access: false
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: DEBUG
+        discovery: DEBUG
+
