@@ -29,3 +29,14 @@ basement:
   price:
     concrete: 1500
     landWorks: 1000
+
+
+---
+
+spring:
+  profiles: heroku
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://calcbuilder-eureka.herokuapp.com
