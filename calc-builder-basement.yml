@@ -35,8 +35,8 @@ basement:
 
 spring:
   profiles: heroku
-  
+
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://calcbuilder-eureka.herokuapp.com
+      defaultZone: https://calcbuilder-eureka.herokuapp.com/eureka/
