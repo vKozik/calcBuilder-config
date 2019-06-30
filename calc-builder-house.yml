@@ -28,10 +28,3 @@ info:
     name: Calculation hause service
     description: This is a service to calculate how much does it cost to build a house
     version: 1.0.0
-
-management:
-  endpoints:
-    web:
-      base-path: /
-      exposure:
-        include: *
