@@ -34,7 +34,10 @@ hystrix:
       execution:
         timeout:
           enabled: false
-
+      isolation:
+        thread:
+          timeoutInMilliseconds: 5000
+          
 info:
   app:
     name: Calculation hause service
