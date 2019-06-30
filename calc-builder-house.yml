@@ -28,6 +28,10 @@ management:
     health: 
       show-details: always
 
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
 hystrix:
   command:
     default:
@@ -36,7 +40,7 @@ hystrix:
           enabled: false
       isolation:
         thread:
-          timeoutInMilliseconds: 5000
+          timeoutInMilliseconds: 9000
           
 info:
   app:
