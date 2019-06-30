@@ -27,7 +27,14 @@ management:
   endpoint: 
     health: 
       show-details: always
-      
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+
 info:
   app:
     name: Calculation hause service
